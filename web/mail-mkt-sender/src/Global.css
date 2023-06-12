@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    @apply bg-[#111111]
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+input {
+    margin-top: 8px;
+}
+
+textarea {
+    min-height: 8rem;
+}
+
+input, textarea {
+    padding: 5px;
+    background-color: rgb(42, 42, 42);
+    border-radius: 5px;
+    border: solid white 2px;
+    color: white;
+    margin-top: 8px;
+    min-width: 20rem;
+}
+
+input::placeholder, textarea::placeholder {
+    font-family: 'Inter', sans-serif;
+}
+
+.body {
+    background-color: rgb(17, 17, 17);
+    font-family: 'Inter', sans-serif;
+}
+
+.form-item {
+    margin: 2rem 0rem;
+    align-items: center;
+    text-align: center;
+}
+
+#fmailbody:focus, #fsubject:focus {
+    border-color: rgb(97, 37, 97);
+    outline: none;
+}
+
+#form-wraper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#button-send-mail {
+    background-color: rgb(97, 37, 97);
+    border-radius: 10px;
+    border: solid white 1px;
+    padding: 1em 3em;
+    color: white;
+    font-size: medium;
+}
+
+#button-send-mail:hover {
+    transform: translate(0, -2px);
+    transition: ease-in;
+    background-color: rgb(107, 43, 107);
+}
